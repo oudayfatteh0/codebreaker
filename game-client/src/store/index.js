@@ -65,7 +65,7 @@ export default createStore({
     actions: {
         connect({ commit }) {
             return new Promise((resolve) => {
-                const ws = new WebSocket("ws://localhost:3000");
+                const ws = new WebSocket("ws://codebreaker-server.onrender.com:3000");
 
                 ws.onopen = () => {
                     console.log("Connected to game server");

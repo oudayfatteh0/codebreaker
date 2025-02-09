@@ -9,7 +9,7 @@ export const useGameStore = () => {
     const error = ref(null);
 
     function connect() {
-        ws.value = new WebSocket("ws://localhost:3000");
+        ws.value = new WebSocket("ws://codebreaker-server.onrender.com:3000");
 
         ws.value.onopen = () => {
             console.log("Connected to game server");
